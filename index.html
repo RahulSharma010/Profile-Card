@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Card</title>
+    <style>
+        body{
+            background-image: linear-gradient(to left,blue,red);
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        .box{
+            /*background-image: linear-gradient(to left,rgb(250, 250, 250),rgb(130, 126, 202));*/
+            background-color: beige;
+            width: 480px;
+            height: 520px;
+            border-radius: 30px;
+            box-shadow: 10px 10px;
+        }
+        .inner-box{
+            background-image: url(https://img.freepik.com/premium-photo/abstract-3d-black-background-grey-background-with-textures-3d-dark-background-image_873925-104492.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699660800&semt=ais);
+            border-radius: 30px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            height: 180px;
+            
+        }
+        .profile{
+            margin-left: 154px;
+            margin-top: 96px;
+        }
+        .name{
+            display: flex;
+            font-size: smaller;
+            justify-content: center;
+            margin-top: -20px;
+        }
+        .position{
+            display: flex;
+            font-size: smaller;
+            justify-content: center;
+            margin-top: -30px;
+        }
+        .about{
+            display: flex;
+            font-size: x-small;
+            justify-content: start;
+            margin-top: 137px;
+            margin-left: 12px;
+        }
+        .detail{
+            margin: 12px;
+            margin-top: -18px;
+            font-family: "Gill Sans Extrabold", sans-serif;
+            font-size: 14px;
+        }
+        .socials{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .socials a{
+            margin-right: 10px;
+        }
+        .btn{
+            background-image: linear-gradient(to right,lightgray,gray);
+            font-size: 18px;
+            color: black;
+            border-radius: 17px;
+            padding: 5px 18px;
+        }
+        .socials .btn{
+            margin-left: 10px; /* Add margin for spacing */
+            vertical-align: middle;
+        }
+        .social{
+            margin-top: 30px;
+        }
+
+        @media screen and (max-width: 500px) {
+            .box{
+                background-color: beige;
+                width: 350px;
+                height: 480px;
+                border-radius: 30px;
+                box-shadow: 10px 10px;
+            }
+            .inner-box{
+                background-image: url(https://img.freepik.com/premium-photo/abstract-3d-black-background-grey-background-with-textures-3d-dark-background-image_873925-104492.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699660800&semt=ais);
+                border-radius: 30px;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+                height: 150px;
+            
+            }
+            .profile{
+                margin-left: 95px;
+                margin-top: 56px;
+            }
+            .name{
+                display: flex;
+                font-size: smaller;
+                justify-content: center;
+                margin-top: -10px;
+            }
+            .position{
+                display: flex;
+                font-size: smaller;
+                justify-content: center;
+                margin-top: -30px;
+            }
+            .about{
+                display: flex;
+                font-size: x-small;
+                justify-content: start;
+                margin-top: 125px;
+                margin-left: 12px;
+            }
+            .detail{
+                margin: 12px;
+                margin-top: -18px;
+                font-family: "Gill Sans Extrabold", sans-serif;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"><div class="inner-box">
+        <img class="profile" src="Profile-pic.png" alt="Profile-picture" style="width: 160px;">
+        <div class="name"><h1>Rahul Sharma</h1></div>
+        <div class="position"><h2>Web Developer</h2></div>
+    </div>
+    <div class="about"><h1><u>About</u></h1></div>
+    <div class="detail"><p><b><i>Aspire to leverage my passion for coding and problem-solving into a career as a skilled software developer, aiming to craft innovative solutions that make a meaningful impact.</i></b></p></div>
+    <div class="social">
+        <ul class="socials">
+            <a href="https://www.facebook.com/profile.php?id=100083352022963"><img src="fb.png" alt="fb" width="30px"></a>   
+            <a href="https://twitter.com/TechnoTeen32"><img src="x.png" alt="x" width="30px"></a>    
+            <a href="https://www.instagram.com/rahul.sharma.2002/"><img src="insta.png" alt="insta" width="30px"></a>    
+            <a href="www.linkedin.com/in/rahul-sharma-868840250"><img src="linkedin.png" alt="lienkdin" width="30px"></a> 
+            <a href="mailto:sharmarahul5278@gmail.com" class="btn">Contact</a>
+        </ul>
+    </div>
+    </div>
+</body>
+</html>
